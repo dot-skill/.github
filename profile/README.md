@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/dot-skill/dot-skill/main/assets/skillerr-mark.png" alt="Skillerr — the Dotling" width="128" height="128" />
+  <img src="https://raw.githubusercontent.com/dot-skill/skillerr/main/assets/skillerr-mark.png" alt="Skillerr — the Dotling" width="128" height="128" />
 </p>
 
 <h1 align="center">Skillerr</h1>
@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://skillerr.com">skillerr.com</a> ·
-  <a href="https://github.com/dot-skill/dot-skill">dot-skill/dot-skill</a> ·
+  <a href="https://github.com/dot-skill/skillerr">dot-skill/skillerr</a> ·
   <a href="https://www.npmjs.com/package/skillerr"><code>npm i -g skillerr</code></a>
 </p>
 
@@ -42,7 +42,7 @@ create a portable .skill with a redacted journey and exact sections I approved
 release-complete. Do not invent filler. Show status and the output path.
 ```
 
-More agent prompts and docs: [dot-skill/dot-skill](https://github.com/dot-skill/dot-skill) · [skillerr.com](https://skillerr.com)
+More agent prompts and docs: [dot-skill/skillerr](https://github.com/dot-skill/skillerr) · [skillerr.com](https://skillerr.com)
 
 ## Trust honesty
 
