@@ -1,49 +1,55 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/dot-skill/skillerr/main/assets/skillerr-mark.png" alt="Skillerr — the Dotling" width="128" height="128" />
-</p>
+<div align="center">
 
-<h1 align="center">Skillerr</h1>
+<a href="https://skillerr.com">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dot-skill/skillerr-browser/main/.github/assets/banner-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dot-skill/skillerr-browser/main/.github/assets/banner-light.png">
+    <img alt="skillerr: the browser that skills your AI" src="https://raw.githubusercontent.com/dot-skill/skillerr-browser/main/.github/assets/banner-light.png" width="520">
+  </picture>
+</a>
 
-<p align="center"><strong>Open protocol and portable <code>.skill</code> format for AI skills.</strong></p>
+**Research like it was meant to be.**<br>
+See what your AI browses. Keep what it learns.
 
-<p align="center">
-  Install once. Point your AI at the work.<br/>
-  Agents create, inspect, hand off, and dry-run skills — you review and approve releases.
-</p>
+<a href="https://skillerr.com"><b>Website</b></a> ·
+<a href="https://github.com/dot-skill/skillerr-releases/releases/latest"><b>Download</b></a> ·
+<a href="https://github.com/dot-skill/skillerr-browser"><b>Source</b></a> ·
+<a href="https://skillerr.com/agents.md"><b>Let your AI install it</b></a>
 
-<p align="center">
-  <a href="https://skillerr.com">skillerr.com</a> ·
-  <a href="https://github.com/dot-skill/skillerr">dot-skill/skillerr</a> ·
-  <a href="https://www.npmjs.com/package/skillerr"><code>npm i -g skillerr</code></a>
-</p>
+</div>
 
----
+## Skillerr Browser
 
-## Why Skillerr
+A free, open-source desktop browser (macOS, Windows, Linux) that your own AI drives: Claude Desktop, Claude Code, Cursor
+or a local model, over MCP.
 
-Plain markdown “skills” and chat exports break down: every model re-interprets prose, context dies across tools, and there is no integrity story before something runs.
+- **Visible:** every page your AI reads opens as a real tab you can watch, many at once.
+- **Governed:** pause, take over and undo; payments, passwords, sign-ins and deletions wait for your OK.
+- **Kept:** research stays on your computer, as a research memory, folders and skills any AI can use.
+- **Light and private:** Chrome's page speed with less memory, and no telemetry.
 
-**`.skill`** is a sealed, inspectable package — typed I/O, workflow, pinned knowledge, redacted provenance, digests, optional mint. **Skillerr** is the open protocol; **`skillerr`** is the reference CLI your agent uses.
-
-The mark is the **Dotling** — the living `.` in `.skill`.
-
-## Start here
+<img alt="Skillerr's fleet view: an AI researching power bank rules across four live tabs" src="https://raw.githubusercontent.com/dot-skill/skillerr-browser/main/.github/assets/fleet.png" width="100%">
 
 ```bash
-npm i -g skillerr
+curl -fsSL https://skillerr.com/install.sh | sh     # macOS and Linux
+irm https://skillerr.com/install.ps1 | iex          # Windows (PowerShell)
 ```
 
-Then paste this into Cursor, ChatGPT, Claude, Codex, or any agent with shell tools:
+| Repository | What it is |
+|---|---|
+| [**skillerr-browser**](https://github.com/dot-skill/skillerr-browser) | The browser: app, MCP bridge and install scripts. AGPL-3.0. |
+| [**skillerr-releases**](https://github.com/dot-skill/skillerr-releases) | Installers for every platform. |
 
-```text
-Install skillerr if needed. Set SKILL_HOST to your host id. From this conversation,
-create a portable .skill with a redacted journey and exact sections I approved
-(secrets as {{refs}}). Checkpoint for handoff, or compile --approve --mint when
-release-complete. Do not invent filler. Show status and the output path.
-```
+## In progress: the Open `.skill` Protocol
 
-More agent prompts and docs: [dot-skill/skillerr](https://github.com/dot-skill/skillerr) · [skillerr.com](https://skillerr.com)
+A sealed, inspectable package format for AI skills: typed inputs and outputs, a workflow, pinned knowledge and digests,
+so a skill can be checked before it runs and handed between agents. Skills in Skillerr Browser will be able to use it.
+Early work, not yet part of the browser.
 
-## Trust honesty
+| Repository | What it is |
+|---|---|
+| [skillerr](https://github.com/dot-skill/skillerr) | The protocol and its reference CLI (`npm i -g skillerr`). Apache-2.0. |
+| [skill-score](https://github.com/dot-skill/skill-score) | A vendor-neutral scoring protocol for `.skill` packages. MIT. |
+| [skillerr-com](https://github.com/dot-skill/skillerr-com) | Protocol documentation. |
 
-Inspect TrustView (digests/seals) before run. Declared host/model fields are self-reported provenance — not cryptographic proof of authorship. Reference mint HMAC in the repo is development-only.
+<sub>Made by Bharat Dudeja · <a href="https://skillerr.com">skillerr.com</a></sub>
